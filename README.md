@@ -1,77 +1,105 @@
 ## To initiate a git repo in an directory
-git init
+
+<code>git init</code>
 
 ## To view the status
-git status
+
+<code>git status</code>
 
 ## Add all the files
-git add . 
+
+<code>git add . </code>
 
 ## To commit the changes
-git commit -m <commit-message>
+
+<code>git commit -m `<commit-message>`</code>
 
 ## To unstage files
-git restore --staged <file-name>
+
+<code>git restore --staged `<file-name>`</code>
 
 ## To view the history of git
-git log
+
+<code>git log</code>
 
 ## To get back to prev commit or to remove all the commits after a particular commit, All the modified files are moved to unstaged area
-git reset <commit hash ID>
+
+<code>git reset `<commit hash ID>`</code>
 
 ## To save the progress without commiting or losing the changes (stash)
-git add <files> ; git stash
+
+<code>git add `<files>` ; git stash</code>
 
 ## To move all the files in the stash to the unstaged area
-git stash pop
+
+<code>git stash pop</code>
 
 ## To remove al the files in the stash
-git stash clear
+
+<code>git stash clear</code>
 
 ## To add the external repo url to local git
-git remote add origin <url>
+
+<code>git remote add origin `<url>`</code>
 
 ## To view all the urls attached to the git folder
-git remote -v
+
+<code>git remote -v</code>
 
 ## Pushing changes
-# format : git push <name assigned to url (origin for personal git account)> <branch-name>
-git push origin main 
 
-# force pushing when the we do not have the changes that remote has
-git push origin main -f
+<code> format : git push `<name assigned to url (origin for personal git account)> <branch-name>`</code>
+
+<code>git push origin main </code>
+
+### force pushing when the we do not have the changes that remote has
+
+<code>git push origin main -f</code>
 
 ## Creating a new branch
-git branch <branch-name>
+
+<code>git branch `<branch-name>`</code>
 
 ## Switching to the new branch
-git checkout <branch-name>
+
+<code>git checkout `<branch-name>`</code>
 
 ## Adding an upstream url(The url of the original git repo from where the you have forked it) after forking a repo
-git remote add upstream <url-name>
 
-git fetch
-# git reset --hard origin/main
-git reset --hard <branch-name> 
+<code>git remote add upstream `<url-name>`</code>
+
+<code>git fetch</code>
+
+## git reset --hard origin/main
+
+<code>git reset --hard `<branch-name>` </code>
 
 ## List all branches
-git branch --list
+
+<code>git branch --list</code>
 
 ## Delete a branch
-git branch <branch-name> -d
+
+<code>git branch `<branch-name>` -d</code>
 
 ## Listing the config of current git repo
-git config --list
+
+<code>git config --list</code>
 
 ## Listing the global configs
-git config --global --list
+
+<code>git config --global --list</code>
 
 ## Getting help e.g. git help branch
-git help <command>
+
+<code>git help `<command>`</code>
 
 ## Merging many commits into a single commit
-#M1
-git reset <commit-ID of the commit after which all the commits have to be merged>; git add .;git commit -m <message for merging commits>
-#M2
-git rebase -i <commit-ID of the commit after which all the commits have to be merged>
 
+### M1
+
+<code>git reset `<commit-ID of the commit after which all the commits have to be merged>`; git add </code>.;git commit -m `<message for merging commits>`
+
+### M2
+
+<code>git rebase -i `<commit-ID of the commit after which all the commits have to be merged>`</code>
