@@ -12,11 +12,11 @@
 
 ## To commit the changes
 
-<code>git commit -m `<commit-message>`</code>
+<code>git commit -m &lt;commit-message&gt;</code>
 
 ## To unstage files
 
-<code>git restore --staged `<file-name>`</code>
+<code>git restore --staged &lt;file-name&gt;</code>
 
 ## To view the history of git
 
@@ -24,11 +24,11 @@
 
 ## To get back to prev commit or to remove all the commits after a particular commit, All the modified files are moved to unstaged area
 
-<code>git reset `<commit hash ID>`</code>
+<code>git reset &lt;commit hash ID&gt;</code>
 
 ## To save the progress without commiting or losing the changes (stash)
 
-<code>git add `<files>` ; git stash</code>
+<code>git add &lt;files&gt; ; git stash</code>
 
 ## To move all the files in the stash to the unstaged area
 
@@ -40,7 +40,7 @@
 
 ## To add the external repo url to local git
 
-<code>git remote add origin `<url>`</code>
+<code>git remote add origin &lt;url&gt;</code>
 
 ## To view all the urls attached to the git folder
 
@@ -48,7 +48,7 @@
 
 ## Pushing changes
 
-<code> format : git push `<name assigned to url (origin for personal git account)> <branch-name>`</code>
+<code> format : git push &lt;name assigned to url (origin for personal git account)> <branch-name&gt;</code>
 
 <code>git push origin main </code>
 
@@ -58,21 +58,21 @@
 
 ## Creating a new branch
 
-<code>git branch `<branch-name>`</code>
+<code>git branch &lt;branch-name&gt;</code>
 
 ## Switching to the new branch
 
-<code>git checkout `<branch-name>`</code>
+<code>git checkout &lt;branch-name&gt;</code>
 
 ## Adding an upstream url(The url of the original git repo from where the you have forked it) after forking a repo
 
-<code>git remote add upstream `<url-name>`</code>
+<code>git remote add upstream &lt;url-name&gt;</code>
 
 <code>git fetch</code>
 
 ## git reset --hard origin/main
 
-<code>git reset --hard `<branch-name>` </code>
+<code>git reset --hard &lt;branch-name&gt; </code>
 
 ## List all branches
 
@@ -80,7 +80,7 @@
 
 ## Delete a branch
 
-<code>git branch `<branch-name>` -d</code>
+<code>git branch &lt;branch-name&gt; -d</code>
 
 ## Listing the config of current git repo
 
@@ -92,14 +92,14 @@
 
 ## Getting help e.g. git help branch
 
-<code>git help `<command>`</code>
+<code>git help &lt;command&gt;</code>
 
 ## Merging many commits into a single commit
 
 ### M1
 
-<code>git reset `<commit-ID of the commit after which all the commits have to be merged>`; git add </code>.;git commit -m `<message for merging commits>`
+<code>git reset &lt;commit-ID of the commit after which all the commits have to be merged&gt;; git add </code>.;git commit -m &lt;message for merging commits&gt;
 
 ### M2
 
-<code>git rebase -i `<commit-ID of the commit after which all the commits have to be merged>`</code>
+<code>git rebase -i &lt;commit-ID of the commit after which all the commits have to be merged&gt;</code>
