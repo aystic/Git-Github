@@ -98,7 +98,7 @@
 
 ### M1
 
-<code>git reset &lt;commit-ID of the commit after which all the commits have to be merged&gt;; git add </code>.;git commit -m &lt;message for merging commits&gt;
+<code>git reset &lt;commit-ID of the commit after which all the commits have to be merged&gt;; git add .;git commit -m &lt;message for merging commits&gt;</code>
 
 ### M2
 
